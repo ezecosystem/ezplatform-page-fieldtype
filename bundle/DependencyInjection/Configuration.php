@@ -194,6 +194,7 @@ EOT;
                         ->arrayNode( 'filters' )
                             ->info( $filtersInfo )
                             ->example( array( 'geometry/scaledownonly' => '"-geometry {1}x{2}>"' ) )
+                            ->prototype( 'scalar' )->end()
                         ->end()
                     ->end()
                 ->end()
