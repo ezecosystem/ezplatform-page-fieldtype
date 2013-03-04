@@ -32,7 +32,7 @@ class PageTest extends FieldTypeTest
         if ( !isset( $this->pageServiceMock ) )
         {
             $this->pageServiceMock = $this->getMock(
-                'eZ\\Publish\\Core\\FieldType\\Page\\Service',
+                'eZ\\Publish\\Core\\FieldType\\Page\\PageService',
                 array(),
                 array(),
                 '',
