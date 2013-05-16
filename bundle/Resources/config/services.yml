@@ -7,7 +7,8 @@ parameters:
     ezpublish.controller.base.class: eZ\Publish\Core\MVC\Symfony\Controller\Controller
     ezpublish.controller.content.view.class: eZ\Publish\Core\MVC\Symfony\Controller\Content\ViewController
     ezpublish.controller.page.view.class: eZ\Publish\Core\MVC\Symfony\Controller\PageController
-    ezpublish.debug.data_collector.class: eZ\Bundle\EzPublishCoreBundle\Collector\EzPublishDataCollector
+    ezpublish.data_collector.spi.persistence.class: eZ\Bundle\EzPublishCoreBundle\Collector\SPIPersistenceDataCollector
+    ezpublish.controller.user.authentication.class: eZ\Publish\Core\MVC\Symfony\Controller\User\AuthenticationController
 
     # FragmentRenderer overrides
     fragment.renderer.esi.class: eZ\Bundle\EzPublishCoreBundle\Fragment\EsiFragmentRenderer
@@ -46,6 +47,11 @@ services:
         arguments: [@ezpublish.view_manager]
         parent: ezpublish.controller.base
         scope: request
+
+    ezpublish.controller.user.authentication:
+        class: %ezpublish.controller.user.authentication.class%
+        arguments: [@ezpublish.user.hash_generator]
+        parent: ezpublish.controller.base
 
     ezpublish.controller.page.view:
         class: %ezpublish.controller.page.view.class%
