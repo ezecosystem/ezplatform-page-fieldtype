@@ -8,14 +8,10 @@
  *
  * @version //autogentag//
  */
-namespace eZ\Publish\Core\MVC\Symfony\View;
 
-use eZ\Publish\Core\FieldType\Page\Parts\Block;
-
-interface BlockValueView
-{
-    /**
-     * @return Block
-     */
-    public function getBlock();
+$file = __DIR__ . '/../vendor/autoload.php';
+if (!file_exists($file)) {
+    throw new RuntimeException('Install dependencies using composer to run the test suite.');
 }
+
+$autoload = require_once $file;

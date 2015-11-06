@@ -1,15 +1,16 @@
 <?php
 
 /**
- * File containing the PageService class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Bundle\EzPublishCoreBundle\FieldType\Page;
+namespace EzSystems\EzPlatformPageFieldTypeBundle\FieldType\Page;
 
+use eZ\Publish\API\Repository\Exceptions\UnauthorizedException;
 use eZ\Publish\Core\FieldType\Page\PageService as BasePageService;
 use eZ\Publish\Core\FieldType\Page\Parts\Block;
 

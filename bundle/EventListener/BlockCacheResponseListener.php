@@ -1,9 +1,14 @@
 <?php
 
 /**
+ * This file is part of the eZ Platform Page Field Type package.
+ *
+ * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
+ *
+ * @version //autogentag//
  */
-namespace eZ\Bundle\EzPublishCoreBundle\EventListener;
+namespace EzSystems\EzPlatformPageFieldTypeBundle\EventListener;
 
 use eZ\Publish\Core\MVC\Symfony\View\CachableView;
 use eZ\Publish\Core\MVC\Symfony\View\BlockView;

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./tests/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         syntaxCheck="true">
+    <testsuites>
+        <testsuite name="Page field type unit tests">
+            <directory suffix="Test.php">./tests/bundle/</directory>
+            <directory suffix="Test.php">./tests/lib/</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>./bundle</directory>
+            <directory>./lib</directory>
+            <directory>./vendor</directory>
+        </whitelist>
+    </filter>
+</phpunit>

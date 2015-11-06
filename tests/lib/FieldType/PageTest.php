@@ -1,15 +1,16 @@
 <?php
 
 /**
- * File containing the AuthorTest class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Publish\Core\FieldType\Tests;
+namespace EzSystems\EzPlatformPageFieldType\Tests\FieldType;
 
+use eZ\Publish\Core\FieldType\Tests\FieldTypeTest;
 use eZ\Publish\Core\FieldType\Page\Type as PageType;
 use eZ\Publish\Core\FieldType\Page\Value as PageValue;
 use eZ\Publish\Core\FieldType\Page\Parts\Page as Page;
