@@ -42,6 +42,7 @@ class EzSystemsEzPlatformPageFieldTypeExtension extends Extension implements Pre
         $loader->load('indexable_fieldtypes.yml');
         $loader->load('storage_engines/legacy/external_storage_gateways.yml');
         $loader->load('storage_engines/legacy/field_value_converters.yml');
+        $loader->load('forms.yml');
 
         // Load bundle configuration
         $loader = new Loader\YamlFileLoader(

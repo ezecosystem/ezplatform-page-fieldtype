@@ -1,0 +1,9 @@
+parameters:
+    ezrepoforms.field_type.form_mapper.ezpage.class: eZ\Publish\Core\FieldType\Page\PageFormMapper
+
+class:
+    ezrepoforms.field_type.form_mapper.ezpage:
+        class: %ezrepoforms.field_type.form_mapper.ezpage.class%
+        arguments: [@ezpublish.fieldType.ezpage.pageService]
+        tags:
+            - { name: ez.fieldType.formMapper, fieldType: ezpage }
