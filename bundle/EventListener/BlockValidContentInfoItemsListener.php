@@ -1,12 +1,17 @@
 <?php
 
 /**
+ * This file is part of the eZ Platform Page Field Type package.
+ *
+ * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
+ *
+ * @version //autogentag//
  */
-namespace eZ\Bundle\EzPublishCoreBundle\EventListener;
+namespace EzSystems\EzPlatformPageFieldTypeBundle\EventListener;
 
 use eZ\Publish\Core\FieldType\Page\PageService;
-use eZ\Bundle\EzPublishCoreBundle\FieldType\Page\PageService as CoreBundlePageService;
+use EzSystems\EzPlatformPageFieldTypeBundle\FieldType\Page\PageService as PageBundlePageService;
 use eZ\Publish\Core\MVC\Symfony\View\BlockView;
 use eZ\Publish\Core\MVC\Symfony\View\Event\FilterViewParametersEvent;
 use eZ\Publish\Core\MVC\Symfony\View\ViewEvents;
@@ -18,7 +23,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class BlockValidContentInfoItemsListener implements EventSubscriberInterface
 {
     /**
-     * @var PageService
+     * @var \eZ\Publish\Core\FieldType\Page\PageService|\EzSystems\EzPlatformPageFieldTypeBundle\FieldType\Page\PageService
      */
     protected $pageService;
 
@@ -35,7 +40,7 @@ class BlockValidContentInfoItemsListener implements EventSubscriberInterface
     public function injectValidContentInfoItems(FilterViewParametersEvent $event)
     {
         $view = $event->getView();
-        if ($view instanceof BlockView && $this->pageService instanceof CoreBundlePageService) {
+        if ($view instanceof BlockView && $this->pageService instanceof PageBundlePageService) {
             $event->getParameterBag()->set(
                 'valid_contentinfo_items',
                 $this->pageService->getValidBlockItemsAsContentInfo($view->getBlock())

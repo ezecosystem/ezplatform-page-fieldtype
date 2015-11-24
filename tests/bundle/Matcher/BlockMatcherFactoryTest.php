@@ -1,16 +1,16 @@
 <?php
 
 /**
- * File containing the BlockMatcherFactoryTest class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Bundle\EzPublishCoreBundle\Tests\Matcher;
+namespace EzSystems\EzPlatformPageFieldTypeBundle\Tests\Matcher;
 
-use eZ\Bundle\EzPublishCoreBundle\Matcher\BlockMatcherFactory;
+use EzSystems\EzPlatformPageFieldTypeBundle\Matcher\BlockMatcherFactory;
 use eZ\Publish\Core\MVC\Symfony\SiteAccess;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -37,7 +37,7 @@ class BlockMatcherFactoryTest extends BaseMatcherFactoryTest
             ->will(
                 $this->returnValueMap(
                     array(
-                        array($matcherServiceIdentifier, ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $this->getMock('eZ\\Publish\\Core\\MVC\\Symfony\\Matcher\\Block\\MatcherInterface')),
+                        array($matcherServiceIdentifier, ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $a = $this->getMock('eZ\\Publish\\Core\\MVC\\Symfony\\Matcher\\Block\\MatcherInterface')),
                     )
                 )
             );

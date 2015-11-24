@@ -1,16 +1,16 @@
 <?php
 
 /**
- * File containing the PageController class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Bundle\EzPublishCoreBundle\Controller;
+namespace EzSystems\EzPlatformPageFieldTypeBundle\Controller;
 
-use eZ\Bundle\EzPublishCoreBundle\FieldType\Page\PageService as CoreBundlePageService;
+use EzSystems\EzPlatformPageFieldTypeBundle\FieldType\Page\PageService as CoreBundlePageService;
 use eZ\Publish\Core\FieldType\Page\Parts\Block;
 use eZ\Publish\Core\MVC\Symfony\Controller\PageController as BasePageController;
 

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * File containing the ParameterProviderTest class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Publish\Core\MVC\Symfony\FieldType\Tests\Page;
+namespace EzSystems\EzPlatformPageFieldType\Tests\MVC\Symfony\FieldType\Page;
 
 use eZ\Publish\Core\MVC\Symfony\FieldType\Page\ParameterProvider;
 use PHPUnit_Framework_TestCase;

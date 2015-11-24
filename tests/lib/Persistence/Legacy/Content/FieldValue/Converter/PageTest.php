@@ -1,14 +1,14 @@
 <?php
 
 /**
- * File containing the PageTest class.
+ * This file is part of the eZ Platform Page Field Type package.
  *
  * @copyright Copyright (C) eZ Systems AS. All rights reserved.
  * @license For full copyright and license information view LICENSE file distributed with this source code.
  *
  * @version //autogentag//
  */
-namespace eZ\Publish\Core\Persistence\Legacy\Tests\Content\FieldValue\Converter;
+namespace EzSystems\EzPlatformPageFieldType\Tests\Persistence\Legacy\Content\FieldValue\Converter;
 
 use eZ\Publish\Core\Persistence\Legacy\Content\FieldValue\Converter\PageConverter;
 use eZ\Publish\Core\FieldType\Page\Parts;
